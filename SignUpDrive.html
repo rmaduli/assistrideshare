@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sign Up - ASSIST</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">ASSIST</a></div>
+				<a href="#menu"><span>Menu</span></a>
+				
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="Howtobook.html">How It Works</a></li>
+					<li><a href="SignUp.html"> Sign Up</a></li>
+					<li><a href="login.html"> Log In</a></li>
+				</ul>
+			</nav>
+			
+		<!-- Main -->
+			<div id="main" class="container">
+			
+		<!-- Content -->
+			<h3 align = "center">Sign Up to Drive</h3>
+			<p> Interested in becoming a Rider?<br>        
+			<a href="SignUpRide.html" class="button alt" align = "center"> Sign up to Ride </a></p>
+			<p> Already a Member?<br>
+			<a href = "login.html"class="button alt" align = "center"> Log In</a></p>
+			<hr/>
+				
+		<!-- Form -->
+					
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwXuyNcMGgL-qTIj8LwiMTIrDIp5XN2jjzBy18-PlE0eUo-g/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+								
+							
+								
+			
+					
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+
+				<h2>Questions?</h2>
+				<h3> Ask Away! </h3>
+
+				<form action="Signupcomplete.html" method="post" id="details">
+
+					<div class="field half first">
+						<label for="name">Name</label>
+						<input name="name" id="name" type="text" placeholder="Name">
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input name="email" id="email" type="email" placeholder="Email">
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<input type = "text" name="message" id="message" placeholder="Message"/><br/>
+						 <button type = "submit" onclick="send()" class="button alt">Send Message</button><br>
+					</div>
+					
+
+					
+				</form>	
+
+			</div>
+		</footer>
+
+					
+			</footer>
+
+			<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+			<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyCcmhmz_Du_nu5T3H3kUhYyUm6dLTxAF_g",
+					authDomain: "ride-1882c.firebaseapp.com",
+					databaseURL: "https://ride-1882c.firebaseio.com",
+					projectId: "ride-1882c",
+					storageBucket: "ride-1882c.appspot.com",
+					messagingSenderId: "576006837410",
+					appId: "1:576006837410:web:6cf9b457c616be308173fb"
+				};
+				// Initialize Firebase
+				firebase.initializeApp(firebaseConfig);
+				</script>
+
+			<script src="assets/js/detailsdb.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

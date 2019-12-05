@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sign Up - ASSIST</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">ASSIST</a></div>
+				<a href="#menu"><span>Menu</span></a>
+				
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="Howtobook.html">How It Works</a></li>
+					<li><a href="SignUp.html"> Sign Up</a></li>
+					<li><a href="login.html"> Log In</a></li>
+				</ul>
+			</nav>
+			
+		<!-- Main -->
+			<div id="main" class="container">
+			
+		<!-- Content -->
+			<h3 align = "center">Sign Up to Ride</h3>
+			<p> Interested in becoming a Driver?<br>        
+			<a href="SignUpDrive.html" class="button alt" align = "center"> Sign up to Drive </a></p>
+			<p> Already a Member?<br>
+				<a href = "login.html"class="button alt" align = "center"> Log In</a></p>
+				<hr/>
+			<!-- Form -->	
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwLtkbShLH60WPfLsP9TCKcD4RN1lPiTcL9IeekoEYOrGheQ/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			<script type = "text/javascript">
+
+
+				var name = document.forms["formform"]["name"];
+				var name = document.forms["formform"]["lname"];
+				var email = document.forms["formform"]["email"];
+				var tel = document.forms["formform"]["phone"];
+				var password = document.forms["formform"]["password"];
+				var password_confirmation = document.forms["formform"]["password_confirmation"];
+			
+			
+				// get all error display objects 
+			
+				var name_error = document.getElementById("name_error")
+				var email_error = document.getElementById("email_error")
+				var tel_error = document.getElementById("tel_error")
+				var password_error = document.getElementById("password_error")
+			   
+			
+			// set all event listeners 
+			
+				name.addEventListener("blur", nameVerify, true);
+				phone.addEventListener("blur", phoneVerify, true);
+				email.addEventListener("blur", emailVerify, true);
+				password.addEventListener("blur", passwordVerify, true);
+			
+			// validation function 
+			
+				function Validate(){ 
+					// name validation
+					if (name.value == "") {
+						name.style.border = "1px solid red";
+						name_error.textContent = alert("Name is required");
+						name.focus();
+						return false;
+					}
+					// validate phone 
+					if (phone.value == "") {
+						name.style.border = "1px solid red";
+						tel_error.textContent = alert("Phone Number required");
+						phone.focus();
+						return false;
+					}
+					// validate email 
+					if (email.value == "") {
+						email.style.border = "1px solid red";
+						email_error.textContent = alert("email is required");
+						email.focus();
+						return false;
+					}
+					// validate pw 
+					if (password.value == "") {
+						password.style.border = "1px solid red";
+						password_error.textContent = alert("password is required");
+						password.focus();
+						return false;
+					}
+					// confirm password validation 
+					if (password.value != password_confirmation.value) {
+						password.style.border = "1px solid red";
+						password_confirmation.style.border = "1px solid red";
+						password_error.innerHTML = alert("password does not match");
+						return false;
+					} 
+			
+				}
+			
+			// event handler function 
+			function nameVerify(){ 
+				if(name.value != "") { 
+					name.style.border = "1px solid red";
+					name_error.innerHTML = "";
+					return true; 
+				}
+			}
+			function emailVerify(){ 
+				if(email.value != "") { 
+					email.style.border = "1px solid red";
+					email_error.innerHTML = "";
+					return true; 
+				}
+			}
+			function passwordVerify(){ 
+				if(password.value != "") { 
+					password.style.border = "1px solid red";
+					password_error.innerHTML = "";
+					return true; 
+				}
+			}
+			</script>
+	
+
+		
+				
+					
+					
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+
+				<h2>Questions?</h2>
+				<h3> Ask Away! </h3>
+
+				<form action="Signupcomplete.html" method="post" id="details">
+
+					<div class="field half first">
+						<label for="name">Name</label>
+						<input name="name" id="name" type="text" placeholder="Name">
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input name="email" id="email" type="email" placeholder="Email">
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<input type = "text" name="message" id="message" placeholder="Message"/><br/>
+						 <button type = "submit" onclick="send()" class="button alt">Send Message</button><br>
+					</div>
+					
+
+					
+				</form>	
+
+			</div>
+		</footer>
+
+					
+			</footer>
+
+			<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+			<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyCcmhmz_Du_nu5T3H3kUhYyUm6dLTxAF_g",
+					authDomain: "ride-1882c.firebaseapp.com",
+					databaseURL: "https://ride-1882c.firebaseio.com",
+					projectId: "ride-1882c",
+					storageBucket: "ride-1882c.appspot.com",
+					messagingSenderId: "576006837410",
+					appId: "1:576006837410:web:6cf9b457c616be308173fb"
+				};
+				// Initialize Firebase
+				firebase.initializeApp(firebaseConfig);
+				</script>
+
+			<script src="assets/js/detailsdb.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

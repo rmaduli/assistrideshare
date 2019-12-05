@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ASSIST- How It Works</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">ASSIST</a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="AboutUs.html">AboutUs</a></li>
+					<li><a href="Howtobook.html">How It Works</a></li>
+					<li><a href="SignUp.html"> Sign Up</a></li>
+					<li><a href="login.html"> Log In</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+		<div id="main" class="container">
+			
+			<section id="post" class="wrapper bg-img" data-bg="background1.jpg">
+				<div class="inner">
+					
+								
+						<div id="main" class="container"></div>
+							<h3 align ="center"><font color ="#FF6347" size = "10" face ="impact"> How Can We Assist You?</font></h3>
+								<h4>Step One</h4>
+									<p><span class="image left"><img src="images/step1.png" width ="50" height ="250" alt="" /></span></p>
+										<div class ="box">
+											<p align ="justify">Creating an account is easy! Click below to sign up. Then all you need is an email address and a phone number. This is key in order to browse for a ride in the nearby area as a driver will be located and directed to you and have your phone number in case of possible questions. </p>
+											<a href="SignUp.html" class="button alt"> Sign up to Ride</a>
+										</div>
+								<br/><br/><h4 align = "right"> Step Two</h4>
+									<p><span class="image right"><img src="images/step2.png" width ="50" height ="250" alt="" /></span></p>
+										<div class="box">
+											<p align ="justify">Once you are signed up, we will look at your profile to see what specific needs to give you. Based on your information, we can determine what kind of car you need (ex. wheelchair accessible bus). To get you to your next destination, you can submit a request through our website! Enter the address of your choice in the search bar “Where to?” Then click “confirm pick up” and then you should be on your way shortly. </p>
+										</div>
+
+								<Br/><h4> Step Three</h4>
+									<p><span class="image left"><img src="images/carservice.jpg" width ="50" height ="200" alt="" /></span></p>
+										<div class="box">
+											<p align ="justify">When meeting the driver for pickup, make sure you are with your correct driver. Ask your driver for his name and who he is picking up. Double check to make sure that you are entering the right vehicle you were assigned to by checking the license plate.</p>
+										</div>
+								<br /><h4 align = "right"> Step Four</h4>
+									<p><span class="image right"><img src="images/group.jpg" width ="50" height ="250" alt="" /></span></p>
+										<div class="box">	
+											<p align ="justify">Once in the vehicle, sit back and enjoy the ride. Connect with others when you are in our safety buses! Watch your destination in real time. Please give feedback and rate the driver/ride as you wish. We want to hear from you! See you next time! </p>
+										</div>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						<hr/>
+					
+				</div>	
+			</section>			
+		</div>	
+		
+					
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+
+				<h2>Questions?</h2>
+				<h3> Ask Away! </h3>
+
+				<form action="Signupcomplete.html" method="post" id="details">
+
+					<div class="field half first">
+						<label for="name">Name</label>
+						<input name="name" id="name" type="text" placeholder="Name">
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input name="email" id="email" type="email" placeholder="Email">
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<input type = "text" name="message" id="message" placeholder="Message"/><br/>
+						 <button type = "submit" onclick="send()" class="button alt">Send Message</button><br>
+					</div>
+					
+
+					
+				</form>	
+
+			</div>
+		</footer>
+
+					
+			</footer>
+
+			<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+			<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyCcmhmz_Du_nu5T3H3kUhYyUm6dLTxAF_g",
+					authDomain: "ride-1882c.firebaseapp.com",
+					databaseURL: "https://ride-1882c.firebaseio.com",
+					projectId: "ride-1882c",
+					storageBucket: "ride-1882c.appspot.com",
+					messagingSenderId: "576006837410",
+					appId: "1:576006837410:web:6cf9b457c616be308173fb"
+				};
+				// Initialize Firebase
+				firebase.initializeApp(firebaseConfig);
+				</script>
+
+			<script src="assets/js/detailsdb.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>

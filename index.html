@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ASSIST</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">ASSIST</a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="Howtobook.html"> How It Works</a></li>
+					<li><a href="SignUp.html"> Sign Up</a></li>
+					<li><a href="login.html"> Log In</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<section id="banner" class="bg-img" data-bg="bannermain.jpg">
+				<div class="inner">
+					<header>
+						<h1>Assist</h1>
+						<h2> A Ride Assistance Service </h2>
+					</header>
+				</div>
+				<a href="#one" class="more">Learn More</a>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper post bg-img" data-bg="background2.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>What we do</h2>
+							<p>About Us</p>
+						</header>
+						<div class="content">
+							<img src ="images/everyone.jpg" height ="300" width ="700">
+							<h4> Our mission is to provide transportation anywhere, anytime for anyone! For more information click below!!</h4>
+						</div>
+						<footer>
+							<a href="AboutUs.html" class="button alt">Learn More</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#two" class="more">Learn More</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper post bg-img" data-bg="background1.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>How To Ride</h2>
+							
+						</header>
+						<div class="content">
+							<p>Interested in our services?</p>
+							<p> At ASSIST, we strive to help those in need. For more details on how our services work, click below. </p>
+						</div>
+						<footer>
+							<a href="Howtobook.html" class="button alt">Learn More</a><hr/>
+							<a href="SignUpDrive.html" class="button alt"> Sign up to Drive </a>
+							<a href="SignUp.html" class="button alt"> Sign up to Ride </a>
+						</footer>
+					</article>
+				</div>
+				<a href="#three" class="more">Learn More</a>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper post bg-img" data-bg="background3.jpeg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Sign Up Now</h2>
+							
+						</header>
+						<div class="divider">
+							<a href="SignUpDrive.html" class="button alt"> Sign up to Drive </a>
+							
+							<a href="SignUp.html" class="button alt"> Sign up to Ride </a>
+						</div>
+						<br/>
+						<footer>
+							<a href="SignUp.html" class="button alt">Learn More</a>
+						</footer>
+						<br/>
+						<h3> Already A Member? Log in Below! </h3>
+							<a href="login.html" class ="button alt"> Log In</a>
+					</article>
+				</div>
+				<a href="#footer" class="more">Learn More</a>
+			</section>
+
+		
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Questions?</h2>
+					<h3> Ask Away! </h3>
+
+					<form action="Signupcomplete.html" method="post" id="details">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<input type = "text" name="message" id="message" placeholder="Message"/><br/>
+							 <button type = "submit" onclick="send()" class="button alt">Send Message</button><br>
+						</div>
+						
+
+						
+					</form>	
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+
+			<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyCcmhmz_Du_nu5T3H3kUhYyUm6dLTxAF_g",
+					authDomain: "ride-1882c.firebaseapp.com",
+					databaseURL: "https://ride-1882c.firebaseio.com",
+					projectId: "ride-1882c",
+					storageBucket: "ride-1882c.appspot.com",
+					messagingSenderId: "576006837410",
+					appId: "1:576006837410:web:6cf9b457c616be308173fb"
+				};
+				// Initialize Firebase
+				firebase.initializeApp(firebaseConfig);
+				</script>
+
+			<script src="assets/js/detailsdb.js"></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+			
+
+	</body>
+</html>

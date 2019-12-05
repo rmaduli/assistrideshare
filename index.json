@@ -1,0 +1,17 @@
+{
+ "details": [{
+ "name": "Subhankar",
+ "lname": "Dhar",
+ "Email": "basic@gmail.com",
+ "phone": "555-555-5555",
+ "password": "password",
+ "Message": "hi"
+ }, {
+ "name": "Hema",
+ "lname": "Mutyala",
+ "Email": "basic@yahoo.com",
+ "phone": "555-667-7777",
+ "password": "password",
+ "Message": "yes"
+ }]
+}
